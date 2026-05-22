@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar/Navbar"
 import { Projects } from "./components/Projects/Projects";
 import { Hero } from "./components/Hero/Hero";
 import { Contacts } from "./components/Contacts/Contacts";
+import { motion } from "framer-motion";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -12,8 +13,10 @@ function App() {
     }, [])
 
     return (
-        <div className={`app ${isLoaded ? 'loaded' : ''}`}>
-            <Navbar />
+        <div className={`app ${isLoaded ? "loaded" : ""}`}>
+            <header>
+                <Navbar />
+            </header>
 
             <Hero />
 
@@ -22,9 +25,9 @@ function App() {
             <Contacts />
 
             <>
-                <footer className="footer">
+                <motion.footer className="footer">
                     <p> &copy; 2026 My Portfolio. All rights reserved.</p>
-                </footer>
+                </motion.footer>
             </>
         </div>
     )

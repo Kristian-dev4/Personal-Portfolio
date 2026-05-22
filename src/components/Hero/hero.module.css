@@ -34,7 +34,7 @@
 
 .hero-badge {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   margin-bottom: 1.5rem;
@@ -183,8 +183,6 @@
 .code-display {
   width: 100%;
 }
-
-/* Hero Media Queries */
 
 @media (max-width: 1024px) {
   .hero-container {
