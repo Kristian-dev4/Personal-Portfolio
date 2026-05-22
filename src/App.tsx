@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react";
-import { Contacts } from "./components/Navbar/Hero/Contacts/Contacts"
-import { Hero } from "./components/Navbar/Hero/Hero"
 import { Navbar } from "./components/Navbar/Navbar"
-import { Projects } from "./components/Projects"
+import { Projects } from "./components/Projects/Projects";
+import { Hero } from "./components/Hero/Hero";
+import { Contacts } from "./components/Contacts/Contacts";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -12,7 +12,7 @@ function App() {
     }, [])
 
     return (
-        <div className="app">
+        <div className={`app ${isLoaded ? 'loaded' : ''}`}>
             <Navbar />
 
             <Hero />
