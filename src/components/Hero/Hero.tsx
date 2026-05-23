@@ -63,6 +63,8 @@ export const Hero = () => {
   stack: {
     languages: ["JavaScript", "TypeScript"],
     frameworks: ["React", "Angular", "Node.js", "Express"],
+    databases: ["MongoDB""],
+    tools: ["Git", "Docker", "Azure", "Terraform"],
   },
   traits: [
     "Passionate about clean code and elegant solutions",
