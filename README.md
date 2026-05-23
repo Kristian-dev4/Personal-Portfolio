@@ -92,3 +92,4 @@ VITE_EMAILJS_KEY=your_service_id
 VITE_EMAILJS_TEMPLATE_KEY=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
+inspired by PedroTech
