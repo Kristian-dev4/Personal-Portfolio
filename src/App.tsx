@@ -14,9 +14,7 @@ function App() {
 
     return (
         <div className={`app ${isLoaded ? "loaded" : ""}`}>
-            <header>
-                <Navbar />
-            </header>
+            <Navbar />
 
             <Hero />
 
