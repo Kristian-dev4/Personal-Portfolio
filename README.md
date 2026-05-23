@@ -1,73 +1,94 @@
-# Personal Portfolio
+# Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio showcasing my web development projects, skills, and contact information. Built with React, TypeScript, Framer Motion, and EmailJS, this portfolio demonstrates both front-end and full-stack capabilities through real-world project examples.
 
-Currently, two official plugins are available:
+## Overview 🌟
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend**: Built with [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/) for a robust, type-safe, and dynamic user interface.
+- **Styling**: Uses CSS Modules for modular, maintainable styles and Framer Motion for smooth, modern animations.
+- **Contact**: Features a contact form powered by [EmailJS](https://www.emailjs.com/) for direct email communication.
+- **Project Showcases**: Highlights real-world projects with detailed descriptions, tech stacks, and live links.
 
-## React Compiler
+## Key Features 🚀
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Animated Hero Section**: Eye-catching introduction with animated text and code snippet.
+- **Projects Gallery**: Responsive, interactive cards for each project, with hover effects and tech stack badges.
+- **Contact Form**: Secure, animated contact form with email sending and status feedback.
+- **Responsive Design**: Fully responsive layout for desktop and mobile devices.
+- **Accessible & Modern UI**: Clean, accessible, and visually appealing interface.
 
-## Expanding the ESLint configuration
+## Project Highlights 🏆
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Meme Maker
+A fun and interactive web application that allows users to create, edit, save, and share memes. Features include:
+- Meme creation with custom text
+- Real-time meme preview
+- User authentication (login/register/logout)
+- Paginated meme catalog
+- AI-powered meme idea generator
+- Built with React, Back4App, Ant Design, and CSS Modules
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+[Live Demo](https://mememake.netlify.app/) | [Source Code](https://github.com/Kristian-dev4/Meme-Maker)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Lutenitsa Appraiser
+A web application for appraising and cataloging Lutenitsa brands. Features include:
+- Brand catalog and detailed appraisals
+- User authentication and profile management
+- Responsive design with Angular Material
+- Built with Angular, Supabase, Angular Material, and TypeScript
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+[Source Code](https://github.com/Kristian-dev4/Lutenitsa-Appraiser)
+
+## Architecture 🏗️
+
+```
+src/
+├── api/                # API integrations (e.g., EmailJS)
+├── components/         # Modular React components
+│   ├── Contacts/       # Contact form and styles
+│   ├── Hero/           # Hero section and styles
+│   ├── Navbar/         # Navigation bar and styles
+│   └── Projects/       # Projects gallery and styles
+├── utils/              # Animation configs and helpers
+├── App.tsx             # Main app component
+├── main.tsx            # Entry point
+└── index.css           # Global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack 🧰
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React**: UI library for building interactive interfaces
+- **TypeScript**: Type-safe JavaScript for scalable code
+- **Framer Motion**: Animation library for React
+- **CSS Modules**: Scoped, maintainable CSS
+- **EmailJS**: Email sending from the contact form
+- **Vite**: Fast build tool and dev server
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## How to Use 🛠️
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+3. **Build for production**
+   ```bash
+   npm run build
+   ```
+4. **Preview production build**
+   ```bash
+   npm run preview
+   ```
+
+## Contact ✉️
+
+The contact form on the site uses EmailJS. To enable it, set the following environment variables in a `.env` file:
+
+```
+VITE_EMAILJS_KEY=your_service_id
+VITE_EMAILJS_TEMPLATE_KEY=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
