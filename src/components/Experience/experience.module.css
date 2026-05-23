@@ -1,0 +1,120 @@
+.experiences {
+  padding: 6rem 5%;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-experience-start) 0%,
+    var(--gradient-experience-end) 100%
+  );
+  position: relative;
+}
+
+.experiences h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: var(--background);
+  border-radius: 1rem;
+  overflow: visible;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid var(--card-border);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.experience-grid .experience-card::after  {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: auto;
+  width: 4px;
+  height: 128px;
+  background: var(--accent-color);
+  content: '';
+}
+
+.experience-grid .experience-card:last-child::after {
+  display: none;
+}
+
+
+@media (min-width: 1200px) {
+  .experience-grid .experience-card::after {
+    top: 100%;
+    margin-top: 0;
+    
+  }
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,
+    var(--gradient-experience-start) 0%,
+    var(--gradient-end) 100%);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.experience-card:hover::before {
+  opacity: 0.1;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-color);
+}
+
+.experience-card:hover ::after {
+  transform: translateX(100%);
+}
+
+.experience-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.experience-card p {
+  padding: 0 1.5rem 0.7rem;
+  color: var(--light-text);
+  flex-grow: 1;
+}
+
+.experience-tech {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.experience-tech span {
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  border: 1px solid rgba(244, 114, 182, 0.2);
+}

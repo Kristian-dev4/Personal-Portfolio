@@ -7,6 +7,7 @@ import { Contacts } from "./components/Contacts/Contacts";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import './App.css';
+import { Experience } from "./components/Experience/Experience";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +23,8 @@ function App() {
             <Hero />
 
             <Projects />
+
+            <Experience />
 
             <Contacts />
 
