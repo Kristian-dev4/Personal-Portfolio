@@ -17,38 +17,32 @@ A modern, interactive portfolio showcasing my web development projects, skills, 
 - **Responsive Design**: Fully responsive layout for desktop and mobile devices.
 - **Accessible & Modern UI**: Clean, accessible, and visually appealing interface.
 
-## Project Highlights 🏆
 
-### Meme Maker
-A fun and interactive web application that allows users to create, edit, save, and share memes. Features include:
-- Meme creation with custom text
-- Real-time meme preview
-- User authentication (login/register/logout)
-- Paginated meme catalog
-- AI-powered meme idea generator
-- Built with React, Back4App, Ant Design, and CSS Modules
+## Section Descriptions 📝
 
-[Live Demo](https://mememake.netlify.app/) | [Source Code](https://github.com/Kristian-dev4/Meme-Maker)
+### Hero Section
+The Hero section is the visually striking introduction at the top of the portfolio. It features animated text, a code snippet, and a brief summary of your professional identity and skills. This section is designed to immediately capture the visitor’s attention, communicate your core strengths, and set the tone for the rest of the site. It often includes a call-to-action, such as links to your projects or contact information, making it easy for visitors to engage with your work right away.
 
-### Lutenitsa Appraiser
-A web application for appraising and cataloging Lutenitsa brands. Features include:
-- Brand catalog and detailed appraisals
-- User authentication and profile management
-- Responsive design with Angular Material
-- Built with Angular, Supabase, Angular Material, and TypeScript
 
-[Source Code](https://github.com/Kristian-dev4/Lutenitsa-Appraiser)
+### Experience Section
+The Experience section is designed to showcase your professional growth, technical skills, and career highlights in a visually engaging way. It uses a timeline or card layout to present your journey, including roles, responsibilities, and technologies you’ve worked with. This section helps visitors quickly understand your background, work ethic, and the progression of your expertise—even if you’re early in your career or have no formal work experience yet.
+
+
+### Projects Section
+The Projects section highlights your technical abilities and creativity by presenting your portfolio work in a clean, interactive gallery. Each project is displayed as a card with a brief description and a list of key technologies, making it easy for visitors to scan and appreciate the breadth of your experience. The section is visually organized for quick browsing, emphasizing your strengths as a developer and your ability to deliver real-world solutions.
 
 ## Architecture 🏗️
+
 
 ```
 src/
 ├── api/                # API integrations (e.g., EmailJS)
 ├── components/         # Modular React components
 │   ├── Contacts/       # Contact form and styles
+│   ├── Experience/     # Experience timeline/cards and styles
 │   ├── Hero/           # Hero section and styles
 │   ├── Navbar/         # Navigation bar and styles
-│   └── Projects/       # Projects gallery and styles
+│   ├── Projects/       # Projects gallery and styles
 ├── utils/              # Animation configs and helpers
 ├── App.tsx             # Main app component
 ├── main.tsx            # Entry point
