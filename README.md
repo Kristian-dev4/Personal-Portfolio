@@ -40,6 +40,7 @@ src/
 ├── api/                # API integrations (e.g., EmailJS)
 ├── components/         # Modular React components
 │   ├── Contacts/       # Contact form and styles
+|   ├── Education/      # Educations 
 │   ├── Experience/     # Experience timeline/cards and styles
 │   ├── Hero/           # Hero section and styles
 │   ├── Navbar/         # Navigation bar and styles
