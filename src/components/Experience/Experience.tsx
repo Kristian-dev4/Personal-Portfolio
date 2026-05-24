@@ -10,14 +10,14 @@ export const Experience = () => {
                 Experience
             </motion.h2>
 
-
             <motion.div className={styles['experience-grid']} variants={animations.staggerContainer} initial="initial" whileInView="animate" viewport={{ once: true }}>
 
                 <motion.div className={styles['experience-card']} whileHover={{ y: -10, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }} variants={animations.fadeInUp}>
 
                     <h3>No working experience yet</h3>
-                    {/* <p className={styles['experience-details']}>Software Engineer</p>
+                    {/*
+                    <p className={styles['experience-details']}>Company Name</p>
                     <p className={styles['experience-details']}>2020 - Present</p>
                     <p className={styles['experience-details']}>Bulgaria</p> */}
                     <p>
@@ -29,9 +29,7 @@ export const Experience = () => {
                         <span>Back4App</span>
                         <span>AntDesign</span> */}
                     </div>
-
                 </motion.div>
-
 
             </motion.div>
         </motion.section >

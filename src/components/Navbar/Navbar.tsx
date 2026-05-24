@@ -30,6 +30,10 @@ export const Navbar = () => {
                     </motion.li>
 
                     <motion.li variants={animations.fadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                        <a href="#education">Education</a>
+                    </motion.li>
+
+                    <motion.li variants={animations.fadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                         <a href="#contacts">Contacts</a>
                     </motion.li>
                 </motion.ul>

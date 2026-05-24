@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import './App.css';
 import { Experience } from "./components/Experience/Experience";
+import { Education } from "./components/Education/Education";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -25,6 +26,8 @@ function App() {
             <Projects />
 
             <Experience />
+
+            <Education />
 
             <Contacts />
 

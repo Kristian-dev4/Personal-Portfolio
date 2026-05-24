@@ -43,13 +43,27 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.hero-text{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem;
+}
+
 .glitch {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   position: relative;
   margin-bottom: 1rem;
   line-height: 1.1;
+}
+
+.hero-image {
+  border-radius: 360px;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {

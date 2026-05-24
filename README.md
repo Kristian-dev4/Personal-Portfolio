@@ -23,13 +23,14 @@ A modern, interactive portfolio showcasing my web development projects, skills, 
 ### Hero Section
 The Hero section is the visually striking introduction at the top of the portfolio. It features animated text, a code snippet, and a brief summary of your professional identity and skills. This section is designed to immediately capture the visitor’s attention, communicate your core strengths, and set the tone for the rest of the site. It often includes a call-to-action, such as links to your projects or contact information, making it easy for visitors to engage with your work right away.
 
+### Projects Section
+The Projects section highlights your technical abilities and creativity by presenting your portfolio work in a clean, interactive gallery. Each project is displayed as a card with a brief description and a list of key technologies, making it easy for visitors to scan and appreciate the breadth of your experience. The section is visually organized for quick browsing, emphasizing your strengths as a developer and your ability to deliver real-world solutions.
 
 ### Experience Section
 The Experience section is designed to showcase your professional growth, technical skills, and career highlights in a visually engaging way. It uses a timeline or card layout to present your journey, including roles, responsibilities, and technologies you’ve worked with. This section helps visitors quickly understand your background, work ethic, and the progression of your expertise—even if you’re early in your career or have no formal work experience yet.
 
-
-### Projects Section
-The Projects section highlights your technical abilities and creativity by presenting your portfolio work in a clean, interactive gallery. Each project is displayed as a card with a brief description and a list of key technologies, making it easy for visitors to scan and appreciate the breadth of your experience. The section is visually organized for quick browsing, emphasizing your strengths as a developer and your ability to deliver real-world solutions.
+### Education Section
+The Education section presents your academic background and relevant training in a clear, card-based format. Each entry highlights your degree or certification, institution, period of study, and key details about your coursework or focus areas. This section helps visitors understand your formal qualifications and the foundation of your technical knowledge, complementing your professional and project experience.
 
 ## Architecture 🏗️
 

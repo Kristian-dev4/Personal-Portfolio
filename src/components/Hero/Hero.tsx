@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { animations } from '../../utils/animations';
 
+
 export const Hero = () => {
     return (
         <motion.section id="home" className={styles['hero']} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
@@ -14,14 +15,16 @@ export const Hero = () => {
                             👋 Hello I'm
                         </span>
                     </motion.div>
+
                     <motion.h1 className={styles['glitch']} variants={animations.fadeInUp} whileHover={{ scale: 1.02 }}>
                         Kristian Yordanov
                     </motion.h1>
+
                     <motion.h2 className={styles['hero-subtitle']} variants={animations.fadeInUp} >
                         Full-Stack JavaScript Developer
                     </motion.h2>
                     <motion.p className={styles['hero-description']} variants={animations.fadeInUp}>
-                        Front-end focused JavaScript developer with experience building full-stack web applications through personal and academic projects
+                        Front-end focused Full-Stack JavaScript developer with experience building full-stack web applications through personal and academic projects
                         using React, Angular, Node.js, and Express. Skilled in developing responsive and scalable applications with a focus on clean UI,
                         performance, and maintainable code. Familiar with RESTful APIs, MongoDB, Git, and modern deployment tools including Docker,
                         Azure, and Terraform
@@ -40,9 +43,11 @@ export const Hero = () => {
                         <motion.a href="https://github.com/Kristian-dev4" target="_blank" >
                             <i className="fab fa-github"></i>
                         </motion.a>
+
                         <motion.a href="https://linkedin.com/in/kristian-yordanov-114846355" target="_blank">
                             <i className="fab fa-linkedin"></i>
                         </motion.a>
+
                     </motion.div>
                 </motion.div>
 
@@ -63,7 +68,7 @@ export const Hero = () => {
   stack: {
     languages: ["JavaScript", "TypeScript"],
     frameworks: ["React", "Angular", "Node.js", "Express"],
-    databases: ["MongoDB""],
+    databases: ["MongoDB"],
     tools: ["Git", "Docker", "Azure", "Terraform"],
   },
   traits: [
@@ -72,7 +77,7 @@ export const Hero = () => {
     "Always eager to learn new technologies and improve skills",
   ],
   missionStatement:
-    "Turning ideas into interfaces and bugs into feature",
+    "Turning ideas into interfaces and bugs into features",
   availability: "Available for hire",
 };`}
                         </SyntaxHighlighter>
