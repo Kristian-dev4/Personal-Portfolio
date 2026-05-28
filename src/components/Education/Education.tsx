@@ -1,25 +1,10 @@
 import { motion } from 'framer-motion';
 import styles from './education.module.css';
 import { animations } from '../../utils/animations';
-
-const educationData = [
-    {
-        degree: 'Front-End Developer with JavaScript',
-        institution: 'Software University',
-        period: '2023 – 2026',
-        location: 'Bulgaria',
-        details: 'Focused on software engineering, algorithms, and web development, professional training in JavaScript, React, Angular, Node.js, and Express.'
-    },
-    {
-        degree: 'High School Diploma',
-        institution: '-',
-        period: '2016 – 2028',
-        location: ' Bulgaria',
-        details: 'Pursuing a high school diploma with a focus on mathematics and computer science.'
-    }
-];
+import educationData from '../../data/education.json';
 
 export const Education = () => {
+
     return (
         <motion.section id="education" className={styles.education} initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>

@@ -1,10 +1,8 @@
 .experiences {
   padding: 6rem 5%;
-  background: linear-gradient(
-    135deg,
-    var(--gradient-experience-start) 0%,
-    var(--gradient-experience-end) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--gradient-experience-start) 0%,
+      var(--gradient-experience-end) 100%);
   position: relative;
 }
 
@@ -37,7 +35,7 @@
   text-align: center;
 }
 
-.experience-grid .experience-card::after  {
+.experience-grid .experience-card::after {
   position: absolute;
   z-index: -1;
   left: 50%;
@@ -57,7 +55,7 @@
   .experience-grid .experience-card::after {
     top: 100%;
     margin-top: 0;
-    
+
   }
 }
 
@@ -69,8 +67,8 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg,
-    var(--gradient-experience-start) 0%,
-    var(--gradient-end) 100%);
+      var(--gradient-experience-start) 0%,
+      var(--gradient-end) 100%);
 
   opacity: 0;
   transition: opacity 0.3s ease;
