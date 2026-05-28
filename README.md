@@ -45,6 +45,7 @@ src/
 │   ├── Hero/           # Hero section and styles
 │   ├── Navbar/         # Navigation bar and styles
 │   ├── Projects/       # Projects gallery and styles
+├── data/              # Static JSON data files (e.g., education, projects)
 ├── utils/              # Animation configs and helpers
 ├── App.tsx             # Main app component
 ├── main.tsx            # Entry point
