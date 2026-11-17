@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "projectName": "Meme Maker",
         "img": "meme_maker.png",
         "description": "A web application that allows users to create and share memes. It features a user-friendly interface and a wide variety of templates to choose from.",
@@ -12,7 +11,6 @@
         "link": "https://github.com/Kristian-dev4/Meme-Maker"
     },
     {
-        "id": 2,
         "projectName": "Lutenitsa Appraiser",
         "img": "lutenitsa_appraiser.png",
         "description": "A web application for appraising and cataloging Lutenitsa brands. Built with Angular and Angular Material, it features user authentication, detailed appraisals and a responsive design.",
@@ -23,6 +21,4 @@
         ],
         "link": "https://github.com/Kristian-dev4/Lutenitsa-Appraiser"
     }
-
-
 ]

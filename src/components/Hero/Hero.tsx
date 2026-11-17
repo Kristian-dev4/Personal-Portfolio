@@ -62,13 +62,13 @@ export const Hero = () => {
                                 background: "rgba(30, 41, 59, 0.8)", backdropFilter: "blur(10px)", marginBottom: 50,
                             }}>
                             {`const aboutMe: DeveloperProfile = {
-  codename: "Kristian",
+  codename: "The_pixel",
   origin: "🌍 Bulgaria",
   role: "Full-Stack JavaScript Developer",
   stack: {
-    languages: ["JavaScript", "TypeScript"],
+    languages: ["JavaScript", "TypeScript", "Python"],
     frameworks: ["React", "Angular", "Node.js", "Express"],
-    databases: ["MongoDB"],
+    databases: ["MongoDB", "SQLite"],
     tools: ["Git", "Docker", "Azure", "Terraform"],
   },
   traits: [

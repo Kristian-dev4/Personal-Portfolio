@@ -19,18 +19,18 @@ export const Projects = () => {
 
                             <motion.div className={styles['project-image']} style={{ backgroundImage: `url(/projects/${project.img})` }}
                                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} />
-                        <h3>{project.projectName}</h3>
-                        <p>
-                            {project.description}
-                        </p>
-                        <div className={styles['project-tech']}>
-                            {project.technologies.map((tech, idx) => (
-                                <span key={idx}>{tech}</span>
-                            ))}
-                        </div>
+                            <h3>{project.projectName}</h3>
+                            <p>
+                                {project.description}
+                            </p>
+                            <div className={styles['project-tech']}>
+                                {project.technologies.map((tech, idx) => (
+                                    <span key={idx}>{tech}</span>
+                                ))}
+                            </div>
 
-                    </motion.div>
-                </motion.a>
+                        </motion.div>
+                    </motion.a>
                 ))}
 
             </motion.div>
